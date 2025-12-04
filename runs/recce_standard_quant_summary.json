@@ -1,0 +1,47 @@
+{
+  "model_tag": "recce_standard",
+  "fp32": {
+    "metrics": {
+      "acc": 0.9008711600183402,
+      "auroc": 0.9596927762031555,
+      "auprc": 0.9690566658973694,
+      "f1": 0.8939884305000305
+    },
+    "path": "./runs\\recce_standard_fp32_final.pt",
+    "size_mb": 44.830523,
+    "lat_ms": 21.786532402038574
+  },
+  "int8_dynamic": {
+    "metrics": {
+      "acc": 0.900687757909216,
+      "auroc": 0.9596703052520752,
+      "auprc": 0.969048023223877,
+      "f1": 0.8937506079673767
+    },
+    "path": "./runs\\recce_standard_int8_dynamic.pt",
+    "size_mb": 44.828581,
+    "lat_ms": 23.903779983520508
+  },
+  "int8_static_fx": {
+    "metrics": {
+      "acc": 0.8986703347088492,
+      "auroc": 0.9595037698745728,
+      "auprc": 0.9684216380119324,
+      "f1": 0.890561580657959
+    },
+    "path": "./runs\\recce_standard_int8_static_fx.pt",
+    "size_mb": 11.328951,
+    "lat_ms": 11.35904312133789
+  },
+  "int8_qat_fx": {
+    "metrics": {
+      "acc": 0.8876662081613939,
+      "auroc": 0.9674656987190247,
+      "auprc": 0.9738768935203552,
+      "f1": 0.8751401305198669
+    },
+    "path": "./runs\\recce_standard_int8_qat_fx.pt",
+    "size_mb": 11.328426,
+    "lat_ms": 12.14245319366455
+  }
+}
